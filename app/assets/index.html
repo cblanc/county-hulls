@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <title></title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+      body { margin:0; padding:0; }
+      .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+      }
+      .child {
+        height: 100%;
+        width: 33%;
+        margin: auto;
+      }
+      /*#map { position:absolute; top:0; bottom:0; width:100%; }*/
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div id="map" class="child"></div>
+  <div id="convex_admin" class="child"></div>
+  <div id="convex_trad" class="child"></div>
+  <div id="mixed_postal" class="child"></div>
+  <div id="mixed_admin" class="child"></div>
+  <div id="mixed_trad" class="child"></div>
+</div>
+<script src="/app.js"></script>
+<script>require("initialize");</script>
+</body>
+</html>
